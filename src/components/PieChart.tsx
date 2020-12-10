@@ -177,7 +177,7 @@ export default function PieChart() {
 
   return (
     <div ref={svgRef}>
-      <svg width={width} height={height}>
+      <svg viewBox={`0 0 ${width} ${height}`}>
         <Group top={centerY + margin.top} left={centerX + margin.left}>
           <Pie
             data={data}

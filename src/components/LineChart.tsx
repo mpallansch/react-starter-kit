@@ -113,9 +113,8 @@ export default function LineChart() {
 
   return config && data && colorScale ? (
     <div className="line-chart-container">
-      <svg width={width} height={height}>
+      <svg viewBox={`0 0 ${width} ${height}`}>
         <MarkerCircle id="marker-circle" fill="#333" size={2} refX={2} />
-        <rect width={width} height={height} fill="#efefef" rx={14} ry={14} />
         { config.seriesKeys.map((seriesKey) => (
           <Group
             key={`series-${seriesKey}`}

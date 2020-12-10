@@ -104,7 +104,7 @@ export default function CdcChart({ configUrl }) {
 
   return (
     <Context.Provider value={{ config, data, seriesHighlight, colorScale, dimensions}}>
-      <div className="cdc-visualization-container">
+      <div className="cdc-visualization-container mt-4">
         {/* Title & Visualization */}
         <div className="chart-container">
           {title && <h1 className="chart-title">{title}</h1>}
